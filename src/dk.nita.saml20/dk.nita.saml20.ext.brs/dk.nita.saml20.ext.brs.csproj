@@ -110,7 +110,12 @@
     <Compile Include="Schema\PrivilegeType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Actions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dk.nita.saml20\dk.nita.saml20.csproj">
+      <Project>{55520059-38BB-48BB-A30E-BFD385293D78}</Project>
+      <Name>Saml2</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Errors.resx">
@@ -119,6 +124,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Actions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
